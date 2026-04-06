@@ -209,7 +209,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+You should use bootstrap when the dataset is small since with bootstrap each resample is the same size as the original train set, but with v-fold cross-validation the resamples are $1/v^{th}$ the size of the train set. 
 
 :::
 
