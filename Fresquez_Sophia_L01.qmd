@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Sophia Fresquez"
+pagetitle: "L01 Sophia Fresquez"
 date: today
 
 format:
@@ -26,9 +26,7 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[L01 Review (sophiafresquez-2)](https://github.com/stat301-3-2026-spring/l01-review-sophiafresquez-2.git)
 :::
 
 ## Overview
@@ -46,18 +44,24 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Split data into test/train/validation
+- Define feature engineering and model type
+- Train model
+- Make predictions
+- Evaluate results
 
 :::
 
 ### Question 2
 
-Explain the difference between supervised and unsupervised learning.
+Last quarter we had an introduction to supervised machine learning processes. Supervised machine learning involves making predictions of a target variable then comparing this prediction the true observation in order to evaluate performance. We have a outcome that supervises/guides the process and this is what we use to make choices about which model is better for a given task.
+
+You do not have a target of interest/an outcome variable in unsupervised learning. What we do have is a dataset where we want to understand the structure between the different observations. 
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Last quarter we had an introduction to supervised machine learning processes. Supervised machine learning involves making predictions, and importantly, having a true observation to compare each value to in order to evaluate performance. 
 
 :::
 
@@ -70,7 +74,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A descriptive model demonstrates the important features and/or patterns of a dataset. The goal is to show what happened, but not to explain the reasons behind the trends or make predictions.
 
 :::
 
@@ -79,7 +83,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Inferential models aim to explain the how of relationships. They are used to test and estimate relationships in data to determine whether they are statistically significant and/or generalizable to a larger population.
 
 :::
 
@@ -88,7 +92,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+The real goal of predictive models is not to understand the underlying reasoning, but just to make accurate predictions. We don't have to understand why, in fact sometimes we include parameters that have no affect and that's okay, the goal is just to minimize error. 
 
 :::
 
@@ -103,7 +107,8 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Parametric models are explainable models made with assumptions. The main foundation of these models is done by the assumptions and not the data. For example, linear models are mechanistic the huge assumption being that the underlying function is linear. 
+However, if the assumptions aren't met the model will most likely be a bad fit, but if they are, the model is most likely going to be very efficient.  
 
 :::
 
@@ -114,7 +119,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven model are data driven models. We make few or no assumptions about the structure of the data. Instead, the model will assess the data and make choices about the best fitting patterns accordingly. 
 
 :::
 
@@ -125,7 +130,7 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic vs an empirically driven model describes how the model is built, either rooted in theory or learned from data. A parametric vs a nonparametric model describes how flexible the model is in representing relationships, whether is has freedom in how to calculate relationships or if it only adjusts a fixed number of parameters as best it can. 
 
 :::
 
@@ -136,7 +141,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+I think a mechanistic model is easier to interpret since they are made based on known theory or processes. This means that each part of the model has a clear interpretation as opposed to an empirically driven model where choices are just made to optimize performance and not due to prior knowledge. 
 
 :::
 
@@ -147,7 +152,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+An empirically driven model would be more flexible since we let the data determine the form of the relationship which is quite flexible. On the other hand, mechanistic models are built from theory meaning their structure is fixed in advance. 
 
 :::
 
@@ -158,7 +163,8 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models tend to have higher bias and lower variance since they are constrained by theory they can oversimplify reality (higher bias). However, they are less sensitive to changes in the data (lower variance).  
+Empirically driven models tend to have lower bias and higher variance since they can fit complex patterns (lower bias). However, this leaves them prone to over fitting which makes them more sensitive to noise (higher variance).
 
 :::
 
