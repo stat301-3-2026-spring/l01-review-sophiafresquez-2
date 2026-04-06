@@ -175,7 +175,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A regression problem predicts a numerical value as the outcome variable while a classification problem predicts a label/factor. 
 
 :::
 
@@ -186,7 +186,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+It's pretty much always a good idea to stratify by the outcome variable to ensure that there is even representation of all ranges of the outcome variable values in each fold. If you don't stratify, this can create class imbalances or skews that are not present in the dataset as a whole. 
 
 :::
 
@@ -197,7 +197,8 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+V-fold cross validation with repeats splits the data into $v$ folds and trains the model on $v-1$ folds and evaluates it on the last fold. This process is then repeated until each fold has been the validation set once and the RMSE calculated from each evaluation is averaged together to get this split's RMSE.  
+Then, this entire process is then repeated multiple times with different random splits and all RMSE results are averaged to produce a more stable estimate by reducing the impact of any single random split. 
 
 :::
 
@@ -219,8 +220,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+We tune model hyperparameters to find the optimal values over the ranges we search. This process helps identify the best values since we don’t know them ahead of time.
 :::
 
 ### Question 10 
@@ -230,7 +230,8 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+RMSE  
+$R^2$
 
 :::
 
@@ -239,7 +240,8 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Accuracy  
+ROC AUC
 
 :::
 
@@ -254,7 +256,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is an inferential since we are trying to understand the relationship between two variables and test whether it is significant. 
 
 :::
 
@@ -263,7 +265,8 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is a predictive problem because we are trying to forecast an outcome for the future. We don't need to understand why this occurs, we just want to make the best estimate we can. 
 
 :::
+
 
